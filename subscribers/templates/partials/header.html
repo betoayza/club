@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container border d-flex justify-content-center w-100">
+    <ul class="list-unstyled d-flex justify-content-center">
+      <li>
+        <a href="{% url 'index' %}"><span>Home</span></a>
+      </li>
+      {% comment %} {% url 'index' %} {% endcomment %}
+      <li>
+        <a href="{% url 'subscribers' %}"><span>Subscribers</span></a>
+      </li>
+      <li>
+        <a href="{% url 'about' %}"><span>About</span></a>
+      </li>
+      <li>
+        <a href="{% url 'contact' %}"><span>Contact</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
